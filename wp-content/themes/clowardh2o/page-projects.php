@@ -95,14 +95,14 @@ $("#a-ashia").mouseleave(function(){
 	}
 </style>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<?php //if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 	<!--Site Content-->
 	<section class="site-content one-column" role="main">
 	    <div class="inner-wrap">
 
 	        <article class="site-content-primary">
-
+<h2>Hover over the map to see how many projects we have built around the world</h2>
 	        	<div class="map" id="map">
 	        		
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -3167,11 +3167,43 @@ $("#a-ashia").mouseleave(function(){
 </svg>
 
 	        	</div>
-	        	<section id="projects_results" class="favorites-module os-animation obj-animation-duration" data-os-animation="fadeInUp" data-os-animation-delay="0.3s">
-	        		
+	        	<section id="projects_results" class="favorites-module os-animation obj-animation-duration" data-os-animation="fadeInDown" data-os-animation-delay="0.3s">
+	        		<h2 class="fm-heading">See some of our projects below</h2>
+<?php
+	        		  global $wp_query;
+  $args = array('post_type' => 'projects','post_status' => 'published', 'orderby'   => 'the_title', 'order' => 'ASC','posts_per_page' => -1,    );
+
+
+  
+  $wp_query = new WP_Query( $args );
+ ?>  
+<div class="rows-of-5">
+
+    <?php
+    if ( $wp_query->have_posts() ):            
+     while ( $wp_query->have_posts() ): the_post(); 
+    
+    ?>
+     <article class="fm-item">
+					<figure class="fmi-img"><?php the_post_thumbnail('thumbnail'); ?></figure>
+					<span class="fmi-text"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></span>
+					
+				</article>
+
+    <?php
+     endwhile; ?>
+</div>
+     <?php else: ?>
+
+       <h2>No results found.</h2>
+      <?php
+  endif;
+
+?>
+
 	        	</section>
 	        	
-				<?php the_content(); ?> 
+				<?php //the_content(); ?> 
 				
 				<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/flexible-content' ) ); ?>
 
@@ -3186,7 +3218,7 @@ $("#a-ashia").mouseleave(function(){
 		</div>
 	</section>
 
-<?php endwhile; ?>
+<?php //endwhile; ?>
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/slidebox' ) ); ?>
 
