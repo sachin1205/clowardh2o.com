@@ -334,7 +334,7 @@ function create_projects_region_custom_taxonomy() {
 
 /* Search Functionality For Projects */
 
-
+/*
 add_action( 'init', 'my_script_enqueuer' );
 
 
@@ -354,7 +354,7 @@ function my_script_enqueuer() {
 
 
 }
-
+*/
 
 add_action( 'wp_ajax_search_pr_results', 'search_pr_results' );
 

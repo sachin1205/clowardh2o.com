@@ -337,19 +337,26 @@
 	overflow:hidden;
 	position:relative;
 	vertical-align:top;
-	&:after{
-		background-color:transparent;
-		content:"";
-		height:100%;
-		left:0;
-		position:absolute;
-		top:0;
-		width:100%;
-		@include transition (all .2s ease-in-out);
+	a{
+		display:block;
+		position:relative;
+		vertical-align:top;
+		&:after{
+			background-color:transparent;
+			content:"";
+			height:100%;
+			left:0;
+			position:absolute;
+			top:0;
+			width:100%;
+			@include transition (all .2s ease-in-out);
+		}
 	}
 	&:hover{
-		&:after{
-			background-color: rgba(13, 85, 164, 0.5);
+		a{
+			&:after{
+				background-color: rgba(13, 85, 164, 0.5);
+			}
 		}
 		.pmi-text, .pmid-text{
 			opacity:1;
@@ -376,6 +383,14 @@
 		&:nth-of-type(2n+1){
 			clear:both;
 		}
+	}
+}
+.edmi-link{
+	@include mq(large){
+		height:60px;
+		margin-top:-60px;
+		display:block;
+		vertical-align:top;
 	}
 }
 .pmi-img{
@@ -493,6 +508,9 @@
 }
 .expertise-dest-module{
 	padding-top:90px;
+}
+.edm-heading{
+	@extend .pm-heading;
 }
 .edm-item{
 	display:block;

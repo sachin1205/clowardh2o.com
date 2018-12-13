@@ -29,18 +29,18 @@
 			echo 'fadeInUp';
 		endif;
 		?>" data-os-animation-delay="0.2s">
+			<a href="<?php the_sub_field('pmi_link') ; ?>">
+				<?php if(get_sub_field('pmi_image')) : ?>
 
-			<?php if(get_sub_field('pmi_image')) : ?>
+					<?php $pmi_image = get_sub_field('pmi_image'); ?>
+					<img src="<?php echo $pmi_image['url']; ?>" alt="<?php echo $pmi_image['title']; ?>" title="<?php echo $pmi_image['title']; ?>" class="pmi-img">
 
-				<?php $pmi_image = get_sub_field('pmi_image'); ?>
-				<img src="<?php echo $pmi_image['url']; ?>" alt="<?php echo $pmi_image['title']; ?>" title="<?php echo $pmi_image['title']; ?>" class="pmi-img">
+				 <?php endif; ?>
 
-			 <?php endif; ?>
-
-			<?php if(get_sub_field('pmi_title')) : ?>
-			<span class="pmi-text"><?php the_sub_field('pmi_title') ; ?></span>
-			<?php endif; ?>
-
+				<?php if(get_sub_field('pmi_title')) : ?>
+				<span class="pmi-text"><?php the_sub_field('pmi_title') ; ?></span>
+				<?php endif; ?>
+			</a>
 		</div>
 		<?php $i++;
 		endwhile;

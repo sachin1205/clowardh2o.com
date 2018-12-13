@@ -400,7 +400,7 @@ $(document).ready(function() {
                     if (direction == 'down') {
                         osElement.addClass('animated').addClass(osAnimationClass);
                     } else {
-                        osElement.removeClass('animated').removeClass(osAnimationClass);
+                        /*osElement.removeClass('animated').removeClass(osAnimationClass);*/
                     }
                 }, {
                     //triggerOnce: true,

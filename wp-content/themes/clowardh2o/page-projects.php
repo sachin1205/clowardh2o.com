@@ -72,6 +72,7 @@ $("#r-rashia").mouseleave(function(){
     $(".rashia_text").attr('style','opacity:0; display:none');
 });
 
+
 $("#a-ashia").mouseenter(function(){
 	$("#ashia").attr('style','opacity:0.65;');
 	$("#austrila").attr('style','opacity:0.65;');
@@ -87,6 +88,7 @@ $("#a-ashia").mouseleave(function(){
 	$("#austrila").attr('style','opacity:1;');
     $(".asia_text").attr('style','opacity:0; display:none');
 });
+
 });
 </script>
 <style>
@@ -108,7 +110,7 @@ $("#a-ashia").mouseleave(function(){
 	    <div class="inner-wrap">
 
 	        <article class="site-content-primary">
-<h2>Hover over the map to see how many projects we have built around the world</h2>
+<h2 class="pm-heading">Hover over the map to see how many projects we have built around the world</h2>
 	        	<div class="map" id="map">
 	        		
 <!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -3155,23 +3157,23 @@ $("#a-ashia").mouseleave(function(){
     
     <g id="north_x5F_USA_x5F_text" class="north_usa_text">
 	<circle fill="#63CDF6" stroke="#FFFFFF" rel="north-america" class="region-id" stroke-miterlimit="10" cx="161.541" cy="303.415" r="28.707"/>
-	<a id="north-america" rel="north-america" class="region-id" href="javascript:void(0)"><text transform="matrix(1 0 0 1 147 309)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('north_america','option'); ?></text></a>
+	<a id="north-america" rel="north-america" class="region-id" href="javascript:void(0);"><text transform="matrix(1 0 0 1 147 309)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('north_america','option'); ?></text></a>
 </g>
 <g id="south_x5F_usa_x5F_text" class="south_usa_text">
 	<circle fill="#63CDF6" stroke="#FFFFFF" rel="central-america-south-america-caribbean" class="region-id" stroke-miterlimit="10" cx="263.193" cy="487.843" r="28.707"/>
-	<a id="central-america-south-america-caribbean" rel="central-america-south-america-caribbean" class="region-id" href="javascript:void(0)"> <text transform="matrix(1 0 0 1 253.1821 492.6445)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('central_america_south_america_caribbean','option'); ?></text></a>
+	<a id="central-america-south-america-caribbean" rel="central-america-south-america-caribbean" class="region-id" href="javascript:void(0);"> <text transform="matrix(1 0 0 1 253.1821 492.6445)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('central_america_south_america_caribbean','option'); ?></text></a>
 </g>
 <g id="africa_x5F_text_1_" class="africa_text">
 	<circle fill="#63CDF6" stroke="#FFFFFF" rel="africa-the-middle-east" class="region-id" stroke-miterlimit="10" cx="425.787" cy="426.334" r="28.707"/>
-	<a id="africa-the-middle-east" rel="africa-the-middle-east" class="region-id" href="javascript:void(0)"><text transform="matrix(1 0 0 1 415.7773 431.1357)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('africa_the_middle_east','option'); ?></text></a>
+	<a id="africa-the-middle-east" rel="africa-the-middle-east" class="region-id" href="javascript:void(0);"><text transform="matrix(1 0 0 1 415.7773 431.1357)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('africa_the_middle_east','option'); ?></text></a>
 </g>
 <g id="rashia_x5F_text" class="rashia_text">
 	<circle fill="#63CDF6" class="region-id" rel="europe" stroke="#FFFFFF" stroke-miterlimit="10" cx="451.369" cy="319.639" r="28.707"/>
-	<a id="europe" class="region-id" rel="europe" href="javascript:void(0)"><text transform="matrix(1 0 0 1 441.3594 324.4404)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('europe','option'); ?></text></a>
+	<a id="europe" class="region-id" rel="europe" href="javascript:void(0);"><text transform="matrix(1 0 0 1 441.3594 324.4404)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('europe','option'); ?></text></a>
 </g>
 <g id="asia_x5F_text" class="asia_text">
 	<circle fill="#63CDF6" class="region-id" rel="asia-india-australia" stroke="#FFFFFF" stroke-miterlimit="10" cx="565.795" cy="383.535" r="28.707"/>
-	<a id="asia-india-australia" class="region-id" rel="asia-india-australia" href="javascript:void(0)"><text transform="matrix(1 0 0 1 555.7852 388.3369)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('asia-india-australia','option'); ?></text></a>
+	<a id="asia-india-australia" class="region-id" rel="asia-india-australia" href="javascript:void(0);"><text transform="matrix(1 0 0 1 555.7852 388.3369)" fill="#FFFFFF" font-family="'Raleway'" font-size="20"><?php the_field('asia-india-australia','option'); ?></text></a>
 </g>    
 
     

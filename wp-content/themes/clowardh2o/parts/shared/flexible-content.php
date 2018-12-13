@@ -409,7 +409,7 @@ if( $images ): ?>
 			echo 'slideInLeft';
 		endif;
 		?>" data-os-animation-delay="0.3s">
-
+			<a href="#" id="<?php echo 'edmi'.$i; ?>" class="edmi-link">&nbsp;</a>
 			<?php if(get_sub_field('emi_image')) : ?>
 
 				<?php $emi_image = get_sub_field('emi_image'); ?>
