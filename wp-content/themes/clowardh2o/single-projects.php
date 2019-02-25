@@ -30,16 +30,17 @@
 
 	       		
 				<div class="our-work flexslider">
-					<?php 
+
+    <ul class="slides">
+    						<?php 
 
 $images = get_field('pg_images');
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
+//$size = 'full'; // (thumbnail, medium, large, full or custom size)
 
 if( $images ): ?>
-    <ul class="slides">
         <?php foreach( $images as $image ): ?>
-            <li>
-            	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+            <li style="background-image: url(<?php echo $image['url']; ?>);">
+            	<!--<?php //echo wp_get_attachment_image( $image['ID'], $size ); ?>-->
             </li>
         <?php endforeach; ?>
     </ul>

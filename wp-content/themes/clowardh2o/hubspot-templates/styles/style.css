@@ -1529,7 +1529,7 @@ This is used to separate sections/modules of the website while still keeping a c
 </section>
 */
 .inner-wrap, .inner-wrap-narrow, .inner-wrap-wide, .inner-wrap-fullwidth {
-  max-width: 100%;
+  max-width: 95em;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em 1em 1.5em 1em; }
@@ -3106,7 +3106,7 @@ figure {
       /*float:left;*/
       width: 18%;
       margin: 0 0 40px 1.33%; }
-      .fm-item:nth-of-type(1) {
+      .fm-item:nth-of-type(5n+1) {
         margin: 0; } }
 
 .fmi-img {

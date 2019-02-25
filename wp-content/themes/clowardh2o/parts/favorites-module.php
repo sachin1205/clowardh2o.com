@@ -8,7 +8,8 @@
 
 		<?php if( have_rows('fm_item') ): while ( have_rows('fm_item') ) : the_row(); ?>
 		<div class="fm-item">
-
+			<?php if(get_sub_field('fmi_url')) : ?>
+			<a href="<?php the_sub_field('fmi_url') ; ?>" class="fm-item-link"><?php endif; ?>
 			<?php if(get_sub_field('fmi_image')) : ?>
 
 				<?php $fmi_image = get_sub_field('fmi_image'); ?>
@@ -19,7 +20,7 @@
 			<?php if(get_sub_field('fmi_title')) : ?>
 			<span class="fmi-text"><?php the_sub_field('fmi_title') ; ?></span>
 			<?php endif; ?>
-
+			</a>
 		</div>
 		<?php endwhile;
 		endif; ?>

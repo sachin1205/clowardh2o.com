@@ -9,7 +9,7 @@ endif; ?>">
 		<div class="sh-sticky-wrap">
 			<div class="inner-wrap">
 				<!-- site logo start -->
-				<span class="sh-logo-wrap"><a href="<?php bloginfo('url'); ?>" class="site-logo"><img src="<?php bloginfo('template_url'); ?>/img/cloward-h2o-logo.jpg" alt="Cloward H2O" title="Cloward H2O"></a></span>
+				<span class="sh-logo-wrap"><a href="<?php bloginfo('url'); ?>" class="site-logo"><img src="<?php bloginfo('template_url'); ?>/img/cloward-h2o-logo.png" alt="Cloward H2O" title="Cloward H2O"></a></span>
 				<!-- site logo end -->
 				<span class="sh-icons">
 					<a href="#menu" class="sh-ico-menu menu-link">&nbsp;</a>

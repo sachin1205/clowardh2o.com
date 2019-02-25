@@ -428,7 +428,7 @@ $(document).ready(function() {
     //     } 
     // });
 
-    $('.pi-text-wrap a').bind("click", jump);
+    /*$('.pi-text-wrap a').bind("click", jump);*/
 
     if (location.hash) { 
         setTimeout(function() { 
