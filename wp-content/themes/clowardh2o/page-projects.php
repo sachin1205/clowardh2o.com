@@ -3249,8 +3249,8 @@ $("#a-ashia").mouseleave(function(){
     
     ?>
      <article class="fm-item">
-					<a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><figure class="fmi-img"><?php the_post_thumbnail('thumbnail'); ?></figure>
-					<span class="fmi-text"><?php the_title(); ?></span></a>
+					<figure class="fmi-img"><?php the_post_thumbnail('thumbnail'); ?></figure>
+					<span class="fmi-text"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></span>
 					
 				</article>
 
