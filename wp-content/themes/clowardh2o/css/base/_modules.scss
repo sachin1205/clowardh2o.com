@@ -1341,6 +1341,13 @@
 	}
 }
 .our-work{
+ .slides {
+ li{
+	width: 100%;
+	height: em(600);
+}
+
+ }
 	margin:0 0 40px !important;
 	.flex-direction-nav{
 		a{

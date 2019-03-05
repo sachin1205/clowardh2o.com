@@ -39,8 +39,8 @@ $images = get_field('pg_images');
 
 if( $images ): ?>
         <?php foreach( $images as $image ): ?>
-            <li style="background-image: url(<?php echo $image['url']; ?>);">
-            	<!--<?php //echo wp_get_attachment_image( $image['ID'], $size ); ?>-->
+            <li style="background-image: url(<?php echo $image['url']; ?>); background-size: cover;">
+             <!--<?php //echo wp_get_attachment_image( $image['ID'], $size ); ?>-->
             </li>
         <?php endforeach; ?>
     </ul>
